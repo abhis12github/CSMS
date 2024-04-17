@@ -1,0 +1,58 @@
+.nav-container {
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    z-index: 100;
+    cursor: pointer;
+
+    &:hover {
+        .non-hover {
+            transform: scale(0);
+        }
+
+        .hover {
+            transform: scale(1);
+        }
+    }
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    color: aqua;
+}
+
+.hover {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    left: 40%;
+    gap: 10px;
+    border: 2px solid aqua;
+    color: aqua;
+    padding: 0.5% 1%;
+    border-radius: 30px;
+    transform: scale(0);
+    transition: all 0.3s;
+}
+
+.non-hover {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 50%;
+    display: flex;
+    border: 2px solid aqua;
+    color: aqua;
+    padding: 0.5% 1%;
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+
+.link>h1{
+    &:hover{
+        color: white;
+    }
+}
+

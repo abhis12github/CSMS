@@ -1,0 +1,48 @@
+.login-container {
+    padding:10% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    background-color: #212121;
+    max-width: 100%;
+    width: 350px;
+    height: 40px;
+    padding: 20px;
+    /* text-align: center; */
+    border: 2px solid white;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+
+.input:focus {
+    color: rgb(0, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+.login-container>div>form{
+    border: 2px solid aqua;
+    padding:15% 13%;
+    width:500px;
+    box-shadow: 5px 5px 20px aqua;
+}
+
+.login-container>div>form>button{
+    border: 2px solid aqua;
+    width: 40%;
+    align-self: center;
+    padding: 2% 0;
+    color: aqua;
+    transition: all  0.2s;
+    &:hover{
+        background-color: aqua;
+        color: black;
+    }
+
+}

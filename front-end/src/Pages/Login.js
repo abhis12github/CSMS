@@ -20,6 +20,8 @@ const Login = () => {
                 email,
                 password,
             });
+            // axios.defaults.headers.common["Authorization"] = res.data.token
+            
             console.log(res)
             if (res && res.data) {
                 alert(res.data && res.data.message)
@@ -27,7 +29,6 @@ const Login = () => {
                     user: res.data.userFound,
                     token: res.data.token
                 })
-                console.log(auth.user)
                 // localStorage.setItem('auth', JSON.stringify(res.data.userFound))
                 navigate("/");
             } else {

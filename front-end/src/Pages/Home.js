@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Pages.css'
 import image from '../Assets/logo.jpg'
 import football from '../Assets/football.png'
@@ -10,8 +10,14 @@ import About from './About'
 import Announcement from './Announcement'
 import Footer from '../Components/Footer/Footer'
 import Navbar from '../Components/Navbar/Navbar'
+import { useAuth } from '../Context/auth'
 
 const Home = () => {
+    const [auth, setAuth] = useAuth()
+
+    useEffect(() => {
+        console.log("user token",auth.token)
+    }, [auth])
     return (
         <>
             <Navbar />
@@ -43,7 +49,6 @@ const Home = () => {
                 <img src={shuttle}/>
             </div> */}
             <About />
-            <Announcement />
             <Footer />
         </>
     )

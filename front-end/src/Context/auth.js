@@ -12,7 +12,6 @@ const AuthProvider = ({ children }) => {
 
     //default axios
     //This is to by deafult set the header in the axios i.e. to not set it in the private route
-    // axios.defaults.headers.common["Authorization"] = auth?.token
 
     // useEffect(() => {
     //     const data = localStorage.getItem('auth')
